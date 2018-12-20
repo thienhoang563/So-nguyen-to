@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = 1;
+    var n = 1;
+
+        do {
+            a++;
+            
+                if (Afunction(a)){
+                    document.write(a + " là số nguyên tố" + "<br>");
+                    n++;
+                }
+        }
+        while(n <=20);
+        function Afunction(a) {
+            for (i = 1; i <= a/2;i++){
+                if (a % i ==0 && i != 1){
+                    return false;
+                }
+            }
+            return true;
+        }
+</script>
+</body>
+</html>
